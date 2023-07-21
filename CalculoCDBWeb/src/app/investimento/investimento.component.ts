@@ -15,7 +15,7 @@ export class InvestimentoComponent {
   constructor(private http: HttpClient) { }
 
   calcularInvestimento() {
-    if (this.valorMonetario <= 0 || this.prazoMeses < 1) {
+    if (this.valorMonetario <= 0 || this.prazoMeses <= 1) {
       alert('Por favor, insira um valor monetário positivo e um prazo maior que 1 mês.');
       return;
     }
