@@ -58,6 +58,9 @@ namespace B3CalculoCDB.Tests
         [InlineData(60000, 7, 12000)]
         [InlineData(40000, 4, 9000)]
         [InlineData(30000, 6, 6750)]
+        [InlineData(30000, 11, 6000)]
+        [InlineData(30000, 23, 5250)]
+        [InlineData(30000, 30, 4500)]
         public void CalcularImposto_ShouldCalculateCorrectly(double rendimento, int meses, double expectedResult)
         {
             var cdbService = new CdbService();
